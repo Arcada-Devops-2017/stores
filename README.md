@@ -1,12 +1,13 @@
 # Stores
 
-One Paragraph of project description goes here
+Dokumentation för alla stores APIer.
+
 
 ## Api Endpoint för att lista alla butiker 
 
 Listar ut alla butiker som finns.
 
-[stores.arcada.nitor.zone/api/stores.php](stores.arcada.nitor.zone/api/stores.php)
+[http://stores.arcada.nitor.zone/api/stores.php](http://stores.arcada.nitor.zone/api/stores.php)
 ```JSON
 {  
    "status":200,
@@ -27,9 +28,9 @@ Listar ut alla butiker som finns.
 
 Listar en butiks all information.
 
-Behöver parametern "store".
+Behöver parametern "store" (store id).
 
-[stores.arcada.nitor.zone/api/store.php?store=0](stores.arcada.nitor.zone/api/store.php?store=0)
+[http://stores.arcada.nitor.zone/api/store.php?store=0](http://stores.arcada.nitor.zone/api/store.php?store=0)
 ```JSON
 {  
    "status":200,
@@ -47,9 +48,9 @@ Behöver parametern "store".
 
 Visar alla butiker som har en viss produkt i lager.
 
-Behöver parametern "product".
+Behöver parametern "product" (product id).
 
-[stores.arcada.nitor.zone/api/stores_with_product.php?product=0](stores.arcada.nitor.zone/api/stores_with_product.php?product=0)
+[http://stores.arcada.nitor.zone/api/stores_with_product.php?product=0](http://stores.arcada.nitor.zone/api/stores_with_product.php?product=0)
 ```JSON
 {  
    "status":200,
@@ -70,9 +71,9 @@ Behöver parametern "product".
 
 Visar alla produkter som en butik har i lager.
 
-Behöver parametern "store".
+Behöver parametern "store" (store id).
 
-[stores.arcada.nitor.zone/api/store_products.php?store=0](stores.arcada.nitor.zone/api/store_products.php?store=0)
+[http://stores.arcada.nitor.zone/api/store_products.php?store=0](http://stores.arcada.nitor.zone/api/store_products.php?store=0)
 ```JSON
 {  
    "status":200,
