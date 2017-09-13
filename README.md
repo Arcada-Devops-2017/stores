@@ -37,7 +37,8 @@ Behöver parametern "store".
       "id":0,
       "name":"Store 0",
       "address":"hurr durr 123",
-      "phone":"+358700123123"
+      "phone":"+358700123123",
+      "email":"info@store0.com"
    }
 }
 ```
