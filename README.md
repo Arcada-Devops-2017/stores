@@ -7,7 +7,7 @@ One Paragraph of project description goes here
 För att lista alla butiker som finns.  
 [Link till sidan](stores.arcada.nitor.zone/api/stores.php)
 
-```
+```JSON
 {  
    "status":200,
    "stores":[  
@@ -27,7 +27,7 @@ För att lista alla butiker som finns.
 
 Listar en butiks all information.
 [Link till sidan](stores.arcada.nitor.zone/api/store.php?store=0)
-```
+```JSON
 {  
    "status":200,
    "info":{  
@@ -43,7 +43,7 @@ Listar en butiks all information.
 
 Visar alla butiker som har en viss produkt i lager.
 [Link till sidan](stores.arcada.nitor.zone/api/stores_with_product.php?product=0)
-```
+```JSON
 {  
    "status":200,
    "stores":[  
@@ -63,7 +63,7 @@ Visar alla butiker som har en viss produkt i lager.
 
 Visar alla produkter som en butik har i lager. 
 [Link till sidan](stores.arcada.nitor.zone/api/store_products.php?store=0)
-```
+```JSON
 {  
    "status":200,
    "products":[  
