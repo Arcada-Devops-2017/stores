@@ -28,6 +28,7 @@ Listar ut alla butiker som finns.
 Listar en butiks all information.
 
 Behöver parametern "store".
+
 [stores.arcada.nitor.zone/api/store.php?store=0](stores.arcada.nitor.zone/api/store.php?store=0)
 ```JSON
 {  
@@ -46,6 +47,7 @@ Behöver parametern "store".
 Visar alla butiker som har en viss produkt i lager.
 
 Behöver parametern "product".
+
 [stores.arcada.nitor.zone/api/stores_with_product.php?product=0](stores.arcada.nitor.zone/api/stores_with_product.php?product=0)
 ```JSON
 {  
@@ -68,6 +70,7 @@ Behöver parametern "product".
 Visar alla produkter som en butik har i lager.
 
 Behöver parametern "store".
+
 [stores.arcada.nitor.zone/api/store_products.php?store=0](stores.arcada.nitor.zone/api/store_products.php?store=0)
 ```JSON
 {  
