@@ -2,7 +2,7 @@
 Library     Selenium2Library
 
 *** Variables ***
-${URL}          http://localhost/
+${URL}          http://localhost:8000/
 ${BROWSER}        firefox
 
 *** Keywords ***
