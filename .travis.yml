@@ -38,7 +38,7 @@ env:
 # omitting "script:" will default to phpunit
 # use the $DB env variable to determine the phpunit.xml to use
 #script: phpunit --configuration phpunit_$DB.xml --coverage-text
-script: phpunit --phpunit_mysql.xml --coverage-text
+script: phpunit --configuration phpunit_mysql.xml --coverage-text
 
 # configure notifications (email, IRC, campfire etc)
 
@@ -53,4 +53,3 @@ deploy:
     script: ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -tt -i stores ubuntu@stores.arcada.nitor.zone /home/ubuntu/update.sh
     on:
       branch: master
-      
