@@ -38,7 +38,7 @@ Exempel UTAN "store" parameter: (returnerar alla butikers info)
 
 [http://stores.arcada.nitor.zone/api/stores.php?store=0](http://stores.arcada.nitor.zone/api/store.php?store=0)
 
-
+Exempel MED "stores" parametern: (returnerar en viss butiks info)
 
 ```JSON
 {  
