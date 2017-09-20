@@ -3,46 +3,58 @@
 Dokumentation för alla stores APIer.
 
 
-## Api Endpoint för att lista alla butiker 
+## Api för att lista ut alla butikernas information
 
-Listar ut alla butiker som finns.
+Default: Listar ut alla butikers information.
 
-[http://stores.arcada.nitor.zone/api/stores.php](http://stores.arcada.nitor.zone/api/stores.php)
+Med parametern "store" (store id) kan man hämta en en viss butiks information.
+
+
+Exempel UTAN "store" parameter: (returnerar alla butikers info)
+[http://stores.arcada.nitor.zone/api/stores.php](http://stores.arcada.nitor.zone/api/store.php)
+
 ```JSON
 {  
    "status":200,
-   "stores":[  
+   "info":[
       {  
          "id":0,
-         "name":"Store 0"
+         "name":"Store 0",
+         "address":"hurr durr 123",
+         "phone":"+358700123123",
+         "email":"info@store0.com"
       },
       {  
          "id":1,
-         "name":"Store 1"
+         "name":"Store 1",
+         "address":"asdfgh 222",
+         "phone":"+3585011111111",
+         "email":"info@1store.com"
       }
    ]
 }
 ```
 
-## Api för att lista ut en butiks info
 
-Listar en butiks all information.
+[http://stores.arcada.nitor.zone/api/stores.php?store=0](http://stores.arcada.nitor.zone/api/store.php?store=0)
 
-Behöver parametern "store" (store id).
 
-[http://stores.arcada.nitor.zone/api/store.php?store=0](http://stores.arcada.nitor.zone/api/store.php?store=0)
+
 ```JSON
 {  
    "status":200,
-   "info":{  
-      "id":0,
-      "name":"Store 0",
-      "address":"hurr durr 123",
-      "phone":"+358700123123",
-      "email":"info@store0.com"
-   }
+   "info":[
+      {  
+         "id":0,
+         "name":"Store 0",
+         "address":"hurr durr 123",
+         "phone":"+358700123123",
+         "email":"info@store0.com"
+      }
+   ]
 }
 ```
+
 
 ## Api endpoint för att visa butiker som har en produkt
 
