@@ -118,11 +118,7 @@ Visas om produkter inte hittas.
 {  
    "status":404,
    "products":[  
-       0,
-       1,
-       2,
-       3,
-       4
+
    ]
 }
 ```
