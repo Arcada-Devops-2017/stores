@@ -61,9 +61,7 @@ Visas om stores inte hittas.
 {  
    "status":404,
    "info":[
-      {  
 
-      }
    ]
 }
 ```
