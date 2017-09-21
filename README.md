@@ -55,6 +55,18 @@ Exempel MED "stores" parametern: (returnerar en viss butiks info)
 }
 ```
 
+Visas om stores inte hittas.
+
+```JSON
+{  
+   "status":404,
+   "info":[
+      {  
+
+      }
+   ]
+}
+```
 
 ## Api endpoint för att visa butiker som har en produkt
 
@@ -89,6 +101,22 @@ Behöver parametern "store" (store id).
 ```JSON
 {  
    "status":200,
+   "products":[  
+       0,
+       1,
+       2,
+       3,
+       4
+   ]
+}
+```
+
+
+Visas om produkter inte hittas.
+
+```JSON
+{  
+   "status":404,
    "products":[  
        0,
        1,
