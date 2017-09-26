@@ -55,14 +55,22 @@ Exempel MED "stores" parametern: (returnerar en viss butiks info)
 }
 ```
 
-Visas om stores inte hittas.
+Visas om givna parametern är felaktig (inte ett heltal / integer).
+
+
+```JSON
+{  
+   "status":400
+   "info":[]
+}
+```
+
+Visas om stores inte hittades med givna parametern.
 
 ```JSON
 {  
    "status":404,
-   "info":[
-
-   ]
+   "info":[]
 }
 ```
 
@@ -89,6 +97,15 @@ Behöver parametern "product" (product id).
 }
 ```
 
+Visas om ingen produkt id har givits eller om produkt id:n är felaktig (inte ett heltal / integer).
+
+```JSON
+{  
+   "status":400,
+   "products":[]
+}
+```
+
 ## Api endpoint för att visa alla produkter en butik har
 
 Visar alla produkter som en butik har i lager.
@@ -109,14 +126,20 @@ Behöver parametern "store" (store id).
 }
 ```
 
+Visas om store id:n är felaktig (inte ett heltal / integer).
+
+```JSON
+{  
+   "status":400,
+   "products":[]
+}
+```
 
 Visas om produkter inte hittas.
 
 ```JSON
 {  
    "status":404,
-   "products":[  
-
-   ]
+   "products":[]
 }
 ```
