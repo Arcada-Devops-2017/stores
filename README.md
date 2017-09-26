@@ -1,6 +1,6 @@
 # Stores
 
-Dokumentation för alla stores APIer.
+Dokumentation för alla stores APIer. Svaren är i JSON format.
 
 
 ## Api för att lista ut alla butikernas information
