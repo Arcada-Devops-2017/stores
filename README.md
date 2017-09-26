@@ -102,7 +102,7 @@ Visas om ingen produkt id har givits eller om produkt id:n är felaktig (inte et
 ```JSON
 {  
    "status":400,
-   "products":[]
+   "stores":[]
 }
 ```
 
