@@ -60,7 +60,7 @@ Visas om givna parametern är felaktig (inte ett heltal / integer).
 
 ```JSON
 {  
-   "status":400
+   "status":400,
    "info":[]
 }
 ```
