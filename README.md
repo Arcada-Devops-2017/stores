@@ -135,7 +135,7 @@ Visas om store id:n är felaktig (inte ett heltal / integer).
 }
 ```
 
-Visas om produkter inte hittas.
+Visas om storen inte hittas.
 
 ```JSON
 {  
