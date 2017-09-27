@@ -7,7 +7,7 @@
 	define( 'DB_USER', 'root');
 	define( 'DB_PASS', 'stores');
 	define( 'DB_NAME', 'stores');
-	define( 'DB_DRIVER', 'mysql')
+	define( 'DB_DRIVER', 'mysql');
 
 
 	# Don't touch this
