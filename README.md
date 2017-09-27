@@ -11,7 +11,7 @@ Med parametern "store" (store id) kan man hämta en en viss butiks information.
 
 
 Exempel UTAN "store" parameter: (returnerar alla butikers info)
-[http://stores.arcada.nitor.zone/api/stores.php](http://stores.arcada.nitor.zone/api/store.php)
+[http://stores.arcada.nitor.zone/api/stores.php](http://stores.arcada.nitor.zone/api/stores.php)
 
 ```JSON
 {  
@@ -36,7 +36,7 @@ Exempel UTAN "store" parameter: (returnerar alla butikers info)
 ```
 
 
-[http://stores.arcada.nitor.zone/api/stores.php?store=0](http://stores.arcada.nitor.zone/api/store.php?store=0)
+[http://stores.arcada.nitor.zone/api/stores.php?store=0](http://stores.arcada.nitor.zone/api/stores.php?store=0)
 
 Exempel MED "stores" parametern: (returnerar en viss butiks info)
 
