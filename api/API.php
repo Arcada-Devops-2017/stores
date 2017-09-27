@@ -13,7 +13,7 @@ class API
 	public function __construct($pdo = NULL)
 	{
 
-		if($pdo == NULL)
+		if($pdo != NULL)
 		{
 
 			$this->pdo = $pdo;
