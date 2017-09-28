@@ -14,7 +14,6 @@ class StoresTest extends PHPUnit_Framework_TestCase
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
-        $this->pdo->query("CREATE DATABASE stores_test; USE stores_test;");
         $this->pdo->query("
         	CREATE TABLE IF NOT EXISTS `stores` (
   			`id` int(11) NOT NULL AUTO_INCREMENT,
