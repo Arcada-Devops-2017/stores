@@ -9,7 +9,7 @@
 
     <testsuites>
         <testsuite name="API Test Suite">
-            <directory>./robot/</directory>
+            <directory>./</directory>
         </testsuite>
     </testsuites>
 
@@ -17,7 +17,7 @@
         <whitelist>
             <directory>./</directory>
             <exclude>
-                <directory>./robot</directory>
+                <directory>./</directory>
             </exclude>
         </whitelist>
     </filter>
