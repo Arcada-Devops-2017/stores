@@ -1,6 +1,6 @@
 <?php
 
-use stores\api;
+require_once('../api/API.php');
 
 class StoresTest extends PHPUnit_Framework_TestCase
 {
