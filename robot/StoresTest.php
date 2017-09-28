@@ -1,6 +1,6 @@
 <?php
 
-use ../api/API;
+use stores\api;
 
 class StoresTest extends PHPUnit_Framework_TestCase
 {
