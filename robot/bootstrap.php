@@ -1,11 +1,16 @@
 <?php
 
-function loader($class)
-{
-    $file = $class . '.php';
-    if (file_exists($file)) {
-        require $file;
-    }
-}
+include_once('AutoLoader.php');
+// Register the directory to your include files
+AutoLoader::registerDirectory('../api');
+AutoLoader::registerDirectory('../');
 
-spl_autoload_register('loader');
+// function loader($class)
+// {
+//     $file = $class . '.php';
+//     if (file_exists($file)) {
+//         require $file;
+//     }
+// }
+
+// spl_autoload_register('loader');
