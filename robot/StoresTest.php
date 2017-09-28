@@ -1,5 +1,7 @@
 <?php
 
+use ../api/API;
+
 class StoresTest extends PHPUnit_Framework_TestCase
 {
     /**
