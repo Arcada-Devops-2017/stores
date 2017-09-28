@@ -9,15 +9,15 @@
 
     <testsuites>
         <testsuite name="API Test Suite">
-            <directory suffix="Test.php">../*</directory>
+            <directory suffix="Test.php">./</directory>
         </testsuite>
     </testsuites>
 
     <filter>
         <whitelist>
-            <directory>../</directory>
+            <directory>./</directory>
             <exclude>
-                <directory>../</directory>
+                <directory>./</directory>
             </exclude>
         </whitelist>
     </filter>
