@@ -242,7 +242,7 @@ class API
 					$status = 200;
 					while($row = $res->fetch(PDO::FETCH_ASSOC))
 					{
-						array_push($array, intval($row['product_id']));
+						array_push($data, intval($row['product_id']));
 					}
 
 				}
