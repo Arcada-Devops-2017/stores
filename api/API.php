@@ -1,4 +1,4 @@
-<?php
+b<?php
 class API
 {
 	/**
@@ -240,7 +240,10 @@ class API
 					$res->execute($params);
 
 					$status = 200;
-					$data = $res->fetchAll(PDO::FETCH_ASSOC);
+					while($row = $res->fetch(PDO::FETCH_ASSOC))
+					{
+						array_push($array, $row['product_id']);
+					}
 
 				}
 				else
@@ -259,7 +262,7 @@ class API
 		
 		# Return the status code & data we collected
 		http_response_code($status);
-		return json_encode(array('status' => $status, 'stores' => $data));
+		return json_encode(array('status' => $status, 'products' => $data));
 	}
 
 }
