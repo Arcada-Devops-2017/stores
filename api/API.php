@@ -1,4 +1,4 @@
-b<?php
+<?php
 class API
 {
 	/**
