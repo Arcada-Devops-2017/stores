@@ -18,15 +18,15 @@ Exempel UTAN "store" parameter: (returnerar alla butikers info)
    "status":200,
    "info":[
       {  
-         "id":0,
-         "name":"Store 0",
+         "id":1,
+         "name":"Store 1",
          "address":"hurr durr 123",
          "phone":"+358700123123",
          "email":"info@store0.com"
       },
       {  
-         "id":1,
-         "name":"Store 1",
+         "id":2,
+         "name":"Store 2",
          "address":"asdfgh 222",
          "phone":"+3585011111111",
          "email":"info@1store.com"
@@ -36,7 +36,7 @@ Exempel UTAN "store" parameter: (returnerar alla butikers info)
 ```
 
 
-[http://stores.arcada.nitor.zone/api/stores.php?store=0](http://stores.arcada.nitor.zone/api/stores.php?store=0)
+[http://stores.arcada.nitor.zone/api/stores.php?store=1](http://stores.arcada.nitor.zone/api/stores.php?store=1)
 
 Exempel MED "stores" parametern: (returnerar en viss butiks info)
 
@@ -45,8 +45,8 @@ Exempel MED "stores" parametern: (returnerar en viss butiks info)
    "status":200,
    "info":[
       {  
-         "id":0,
-         "name":"Store 0",
+         "id":1,
+         "name":"Store 1",
          "address":"hurr durr 123",
          "phone":"+358700123123",
          "email":"info@store0.com"
@@ -80,18 +80,18 @@ Visar alla butiker som har en viss produkt i lager.
 
 Behöver parametern "product" (product id).
 
-[http://stores.arcada.nitor.zone/api/stores_with_product.php?product=0](http://stores.arcada.nitor.zone/api/stores_with_product.php?product=0)
+[http://stores.arcada.nitor.zone/api/stores_with_product.php?product=1](http://stores.arcada.nitor.zone/api/stores_with_product.php?product=1)
 ```JSON
 {  
    "status":200,
    "stores":[  
       {  
-         "id":0,
-         "name":"Store 0"
-      },
-      {  
          "id":1,
          "name":"Store 1"
+      },
+      {  
+         "id":2,
+         "name":"Store 2"
       }
    ]
 }
@@ -112,12 +112,11 @@ Visar alla produkter som en butik har i lager.
 
 Behöver parametern "store" (store id).
 
-[http://stores.arcada.nitor.zone/api/store_products.php?store=0](http://stores.arcada.nitor.zone/api/store_products.php?store=0)
+[http://stores.arcada.nitor.zone/api/store_products.php?store=1](http://stores.arcada.nitor.zone/api/store_products.php?store=1)
 ```JSON
 {  
    "status":200,
    "products":[  
-       0,
        1,
        2,
        3,
