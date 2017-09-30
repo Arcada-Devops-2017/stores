@@ -10,12 +10,9 @@ class API
 	 * This will create the PDO object
 	 * a PDO object can be passed, can be used for unit testing purposes
 	 */
+	
 	public function __construct($pdo = NULL)
 	{
-
-		# Set the header
-		header('Access-Control-Allow-Origin: *');
-		header('Content-Type: application/json; charset=utf-8'); 
 
 		if($pdo != NULL)
 		{
