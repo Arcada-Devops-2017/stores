@@ -30,6 +30,15 @@ class APITest extends PHPUnit_Framework_TestCase
         $this->assertEquals(400, $test['status']);
 
     }
+
+    public function testStores_with_product()
+    {
+        $API = new API($this->pdo);
+
+        $test = json_decode($API->stores_with_product(), TRUE);
+        $this->assertEquals(400, $test['status']);
+
+    }
    
 }
 
