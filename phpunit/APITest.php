@@ -24,7 +24,7 @@ class APITest extends PHPUnit_Framework_TestCase
         $this->assertEquals(200, $test['status']);
 
         $test = json_decode($API->stores(10), TRUE);
-        $this->assertEquals(404, $test['status'])
+        $this->assertEquals(404, $test['status']);
 
         $test = json_decode($API->stores('invalid_id'), TRUE);
         $this->assertEquals(400, $test['status'];
