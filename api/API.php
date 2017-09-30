@@ -13,6 +13,10 @@ class API
 	public function __construct($pdo = NULL)
 	{
 
+		# Set the header
+		header('Access-Control-Allow-Origin: *');
+		header('Content-Type: application/json; charset=utf-8'); 
+
 		if($pdo != NULL)
 		{
 
