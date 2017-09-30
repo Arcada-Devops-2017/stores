@@ -72,7 +72,7 @@ class API
 		{
 
 			# Check that we're working with an integer
-			if(!filter_var($product_id, FILTER_VALIDATE_INT))
+			if(!filter_var($store_id, FILTER_VALIDATE_INT))
 			{	
 				# Looks like we got something else
 				$status = 400;
