@@ -2,7 +2,7 @@
 
 require_once(__DIR__ . '/../api/API.php');
 
-class StoresTest extends PHPUnit_Framework_TestCase
+class APITest extends PHPUnit_Framework_TestCase
 {
     /**
      * @var PDO
@@ -19,9 +19,16 @@ class StoresTest extends PHPUnit_Framework_TestCase
     public function testStores()
     {
         $API = new API($this->pdo);
-        $test = json_decode($API->stores(), TRUE);
 
-        $this->assertEquals(200, $test["status"]);
+        $test = json_decode($API->stores(), TRUE);
+        $this->assertEquals(200, $test['status']);
+
+        $test = json_decode($API->stores(10), TRUE);
+        $this->assertEquals(404, $test['status'])
+
+        $test = json_decode($API->stores('invalid_id'), TRUE);
+        $this->assertEquals(400, $test['status'];
+
     }
    
 }
