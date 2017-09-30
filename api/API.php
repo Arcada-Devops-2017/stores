@@ -42,6 +42,9 @@ class API
 	}
 
 
+
+
+
 		#############################################
 		#############################################
 		##########  Store information API  ##########
@@ -110,7 +113,7 @@ class API
 
 		# Return the status code & data we collected
 		http_response_code($status);
-		return json_encode(array('status' => $status, 'info' => $data));
+		return json_encode(array('status' => $status, 'info' => $data), JSON_NUMERIC_CHECK);
 	}
 
 
@@ -176,8 +179,10 @@ class API
 
 		# Return the status code & data we collected
 		http_response_code($status);
-		return json_encode(array('status' => $status, 'stores' => $data));
+		return json_encode(array('status' => $status, 'stores' => $data), JSON_NUMERIC_CHECK);
 	}
+
+
 
 
 
@@ -242,7 +247,7 @@ class API
 					$status = 200;
 					while($row = $res->fetch(PDO::FETCH_ASSOC))
 					{
-						array_push($data, intval($row['product_id']));
+						array_push($data, $row['product_id']);
 					}
 
 				}
@@ -262,7 +267,7 @@ class API
 		
 		# Return the status code & data we collected
 		http_response_code($status);
-		return json_encode(array('status' => $status, 'products' => $data));
+		return json_encode(array('status' => $status, 'products' => $data), JSON_NUMERIC_CHECK);
 	}
 
 }
