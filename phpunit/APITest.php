@@ -23,6 +23,21 @@ class APITest extends PHPUnit_Framework_TestCase
         $test = json_decode($API->stores(), TRUE);
         $this->assertEquals(200, $test['status']);
 
+        $this->assertArrayHasKey('id', $test['info'][0]);
+        $this->assertArrayHasKey('name', $test['info'][0]);
+        $this->assertArrayHasKey('address', $test['info'][0]);
+        $this->assertArrayHasKey('phone', $test['info'][0]);
+        $this->assertArrayHasKey('email', $test['info'][0]);
+
+        $test = json_decode($API->stores(1), TRUE);
+        $this->assertEquals(200, $test['status']);
+
+        $this->assertArrayHasKey('id', $test['info'][0]);
+        $this->assertArrayHasKey('name', $test['info'][0]);
+        $this->assertArrayHasKey('address', $test['info'][0]);
+        $this->assertArrayHasKey('phone', $test['info'][0]);
+        $this->assertArrayHasKey('email', $test['info'][0]);
+
         $test = json_decode($API->stores(10), TRUE);
         $this->assertEquals(404, $test['status']);
 
@@ -35,8 +50,15 @@ class APITest extends PHPUnit_Framework_TestCase
     {
         $API = new API($this->pdo);
 
+        $test = json_decode($API->stores_with_product(2), TRUE);
+        $this->assertEquals(200, $test['status']);
+
         $test = json_decode($API->stores_with_product(), TRUE);
         $this->assertEquals(400, $test['status']);
+
+        $test = json_decode($API->stores_with_product(3.33), TRUE);
+        $this->assertEquals(400, $test['status']);
+
 
     }
    
