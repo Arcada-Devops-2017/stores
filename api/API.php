@@ -99,7 +99,7 @@ class API
 					$res = $pdo->prepare('SELECT * FROM stores WHERE id = :store_id');
 					$res->execute($params);
 
-					$data = $res->fetch(PDO::FETCH_ASSOC);
+					$data = array($res->fetch(PDO::FETCH_ASSOC));
 					$status = 200;
 
 				}
