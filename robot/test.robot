@@ -10,6 +10,7 @@ Stores Info Test
     ${response}=  Get Request  api  /stores.php
     ${jsondata}=  To Json  ${response.content}
     ${keys}=  Create List  id  name  address  phone  email
+    Sort List ${keys}
     ${checkKeys}=  Get Dictionary Keys  ${jsondata['info'][0]}
     Should Be Equal As Strings  ${response.status_code}  200
-    Should Contain  ${keys}  ${checkKeys}
+    Should Contain  ${checkKeys}  ${keys}
