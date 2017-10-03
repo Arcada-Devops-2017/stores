@@ -38,7 +38,7 @@ script:
   - php -S localhost:8000 &> /tmp/serverlog &
   - cd -
   - cd robot
-  - pybot db_test.robot
+  - pybot test.robot
   - cd -
   - cat /tmp/serverlog
 
