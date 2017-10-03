@@ -3,7 +3,7 @@ Library  Collections
 Library  RequestsLibrary
 Library  Selenium2Library
 Library  String
-Suite Teardown Delete All Sessions
+Suite Teardown  Delete All Sessions
 *** Test cases ***
 Stores Info Test
     Create Session  api  http://localhost:8000/api
