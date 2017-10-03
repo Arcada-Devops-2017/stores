@@ -42,6 +42,16 @@ class API
 		
 	}
 
+	private function utf8_converter($array)
+	{
+		array_walk_recursive($array, function(&$item, $key){
+			if(!mb_detect_encoding($item, 'utf-8', true)){
+				$item = utf8_encode($item);
+			}
+		})
+		return $array;
+	}
+
 
 
 
@@ -114,6 +124,7 @@ class API
 
 		# Return the status code & data we collected
 		http_response_code($status);
+		$data = $this->utf8_converter($data);
 		return json_encode(array('status' => $status, 'info' => $data), JSON_NUMERIC_CHECK);
 	}
 
@@ -180,9 +191,9 @@ class API
 
 		# Return the status code & data we collected
 		http_response_code($status);
+		$data = $this->utf8_converter($data);
 		return json_encode(array('status' => $status, 'stores' => $data), JSON_NUMERIC_CHECK);
 	}
-
 
 
 
