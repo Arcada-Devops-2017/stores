@@ -9,5 +9,6 @@ Stores Info Test
     Create Session  api  http://localhost:8000
     ${response}=  Get Request  api  /stores.php
     ${jsondata}=  To Json  ${response.content}
+    ${data}=  Create Dictionary  id=1  name=Test 1  address=Test address  phone=1234567  email=test@email.com
     Should Be Equal As Strings  ${response.status_code}  200
-    Should Contain As Strings  ${jsondata['info']}  {'id':1,'name':'Test 1','address':'Test address','phone':1234567,'email':'test@email.com'}
+    Should Contain As Strings  ${jsondata['info']}  ${data}
