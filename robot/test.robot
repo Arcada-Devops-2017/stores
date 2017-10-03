@@ -12,4 +12,4 @@ Stores Info Test
     ${keys}=  Create List  address  email  id  name  phone
     ${checkKeys}=  Get Dictionary Keys  ${jsondata['info'][0]}
     Should Be Equal As Strings  ${response.status_code}  200
-    Should Should Be Equal  ${checkKeys}  ${keys}
+    Lists Should Be Equal  ${checkKeys}  ${keys}
