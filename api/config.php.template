@@ -6,7 +6,7 @@
 	define( 'DB_HOST', 'localhost' );
 	define( 'DB_USER', 'travis');
 	define( 'DB_PASS', '');
-	define( 'DB_NAME', 'stores');
+	define( 'DB_NAME', 'stores_test');
 	define( 'DB_DRIVER', 'mysql');
 
 
